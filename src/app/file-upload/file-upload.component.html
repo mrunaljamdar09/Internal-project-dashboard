@@ -1,0 +1,18 @@
+<div class="center">
+  <h5>Customer Feedback Analysis</h5> <br/>
+<input type="file" class="file-input" (change)="onChange($event)" #fileUpload />
+
+<div *ngIf="file">
+  <section class="file-info">
+    File details:
+    <ul>
+      <li>Name: {{file.name}}</li>
+      <li>Type: {{file.type}}</li>
+    
+    </ul>
+  </section>
+
+  <button   (click)="onUpload()">Upload the file</button>
+
+</div>
+</div>
